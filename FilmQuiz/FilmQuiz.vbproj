@@ -125,6 +125,9 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion1.resx">
+      <DependentUpon>frmQuestion1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -161,6 +164,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\john-wick-2-guns.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lance-Reddick-John-Wick-4-031723-6d05984810cb42d6a09e41623fbab4e1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0_hewDCiphOeqAjs0B.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
