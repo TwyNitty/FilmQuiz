@@ -144,5 +144,23 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cinema.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darth-vader-on-platform_900x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darth-vader-on-platform_900x1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empire-strikes-back-1-2000-894db7fcfa754165a5fa8d06ea9157a8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\john wick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\john-wick-2-guns.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
