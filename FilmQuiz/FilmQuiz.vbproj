@@ -128,6 +128,12 @@
     <EmbeddedResource Include="frmQuestion1.resx">
       <DependentUpon>frmQuestion1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion2.resx">
+      <DependentUpon>frmQuestion2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion3.resx">
+      <DependentUpon>frmQuestion3.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -170,6 +176,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\0_hewDCiphOeqAjs0B.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidious.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palpatine.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3qlzyunDrkwWOKEWZRxeIF4HEUC.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

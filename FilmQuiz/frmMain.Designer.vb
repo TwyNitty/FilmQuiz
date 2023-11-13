@@ -23,9 +23,9 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtPlayerName = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnQuit = New System.Windows.Forms.Button()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -44,13 +44,13 @@ Partial Class frmMain
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Movie Quiz"
         '
-        'TextBox1
+        'txtPlayerName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(214, 374)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(307, 42)
-        Me.TextBox1.TabIndex = 3
+        Me.txtPlayerName.Location = New System.Drawing.Point(214, 374)
+        Me.txtPlayerName.Multiline = True
+        Me.txtPlayerName.Name = "txtPlayerName"
+        Me.txtPlayerName.Size = New System.Drawing.Size(307, 42)
+        Me.txtPlayerName.TabIndex = 3
         '
         'Label2
         '
@@ -61,15 +61,15 @@ Partial Class frmMain
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Player Name"
         '
-        'Button1
+        'btnQuit
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(731, 243)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(322, 69)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Quit"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnQuit.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnQuit.Location = New System.Drawing.Point(731, 243)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(322, 69)
+        Me.btnQuit.TabIndex = 5
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
         '
         'btnStart
         '
@@ -118,9 +118,9 @@ Partial Class frmMain
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.btnStart)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtPlayerName)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -136,9 +136,9 @@ Partial Class frmMain
 
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtPlayerName As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnQuit As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents btnStart As Button

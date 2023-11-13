@@ -28,8 +28,10 @@ Partial Class frmQuestion1
         Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -42,7 +44,7 @@ Partial Class frmQuestion1
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(775, 66)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "What is the name of the hoten concierge in the john wick films?"
+        Me.Label1.Text = "What is the name of the hotel concierge in the john wick films?"
         '
         'btnNext
         '
@@ -57,7 +59,7 @@ Partial Class frmQuestion1
         'btnAnswer1
         '
         Me.btnAnswer1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAnswer1.Location = New System.Drawing.Point(373, 169)
+        Me.btnAnswer1.Location = New System.Drawing.Point(32, 6)
         Me.btnAnswer1.Name = "btnAnswer1"
         Me.btnAnswer1.Size = New System.Drawing.Size(97, 26)
         Me.btnAnswer1.TabIndex = 3
@@ -68,7 +70,7 @@ Partial Class frmQuestion1
         'btnAnswer2
         '
         Me.btnAnswer2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAnswer2.Location = New System.Drawing.Point(373, 212)
+        Me.btnAnswer2.Location = New System.Drawing.Point(32, 49)
         Me.btnAnswer2.Name = "btnAnswer2"
         Me.btnAnswer2.Size = New System.Drawing.Size(140, 29)
         Me.btnAnswer2.TabIndex = 4
@@ -79,7 +81,7 @@ Partial Class frmQuestion1
         'btnAnswer3
         '
         Me.btnAnswer3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAnswer3.Location = New System.Drawing.Point(373, 256)
+        Me.btnAnswer3.Location = New System.Drawing.Point(32, 93)
         Me.btnAnswer3.Name = "btnAnswer3"
         Me.btnAnswer3.Size = New System.Drawing.Size(135, 33)
         Me.btnAnswer3.TabIndex = 5
@@ -90,13 +92,27 @@ Partial Class frmQuestion1
         'btnAnswer4
         '
         Me.btnAnswer4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAnswer4.Location = New System.Drawing.Point(373, 304)
+        Me.btnAnswer4.Location = New System.Drawing.Point(32, 141)
         Me.btnAnswer4.Name = "btnAnswer4"
         Me.btnAnswer4.Size = New System.Drawing.Size(125, 32)
         Me.btnAnswer4.TabIndex = 6
         Me.btnAnswer4.TabStop = True
         Me.btnAnswer4.Text = "Marcus"
         Me.btnAnswer4.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.AutoSize = True
+        Me.GroupBox1.Controls.Add(Me.btnAnswer4)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer3)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer2)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer1)
+        Me.GroupBox1.Location = New System.Drawing.Point(341, 169)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(240, 206)
+        Me.GroupBox1.TabIndex = 8
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "GroupBox1"
         '
         'PictureBox2
         '
@@ -123,21 +139,20 @@ Partial Class frmQuestion1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(984, 549)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.btnAnswer4)
-        Me.Controls.Add(Me.btnAnswer3)
-        Me.Controls.Add(Me.btnAnswer2)
-        Me.Controls.Add(Me.btnAnswer1)
         Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "frmQuestion1"
         Me.Text = "frmQuestion1"
+        Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -149,4 +164,5 @@ Partial Class frmQuestion1
     Friend WithEvents btnAnswer3 As RadioButton
     Friend WithEvents btnAnswer4 As RadioButton
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents GroupBox1 As GroupBox
 End Class
